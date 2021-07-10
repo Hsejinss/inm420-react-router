@@ -4,7 +4,7 @@ const About = (props) => {
 
   return(
     <div>
-      aaa
+      This is About component.
     </div>
   )
 };

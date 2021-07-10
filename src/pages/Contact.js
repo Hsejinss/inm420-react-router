@@ -1,12 +1,12 @@
 import React from 'react';
 
-const About = (props) => {
+const Contact = (props) => {
 
   return(
     <div>
-      aaa
+      This is Contact component.
     </div>
   )
 };
 
-export default About;
+export default Contact;

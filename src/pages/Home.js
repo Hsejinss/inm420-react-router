@@ -1,12 +1,13 @@
 import React from 'react';
+import './Style.css';
 
-const About = (props) => {
+const Home = (props) => {
 
   return(
-    <div>
-      aaa
+    <div className="home-component">
+      This is Home component.
     </div>
   )
 };
 
-export default About;
+export default Home;
