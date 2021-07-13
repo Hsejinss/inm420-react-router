@@ -16,8 +16,11 @@ const Home = (props) => {
         </h1>
       </div>
       {/* content */}
-      
-
+      <div className="home-content">
+        <h2 className="content-text">
+          What I do?
+        </h2>
+      </div>
 
       
     </div>

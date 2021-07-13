@@ -6,6 +6,10 @@ const Project = (props) => {
   return(
     <div className="project-component">
       This is Project Component.
+      {/* content */}
+      <div className="project-content">
+        
+      </div>
     </div>
   )
 };
