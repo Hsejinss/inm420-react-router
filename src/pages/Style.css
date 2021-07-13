@@ -1,8 +1,19 @@
+/**********Home**********/
+.home-component {
+    color: red;
+    font-family: 'Abril Fatface', cursive;
+}
+
+/**********About**********/
+
+/**********Project**********/
 .project-component {
     font-size: 50px;
 }
 
-/*HOME*/
-.home-component {
-    color: red;
+/**********Contact**********/
+
+/*desktop version*/
+@media (min-width: 800px) {
+
 }

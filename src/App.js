@@ -1,9 +1,10 @@
 import React from "react"
-import Project from './pages/Project';
 import Home from './pages/Home';
 import About from './pages/About'
+import Project from './pages/Project';
 import Contact from './pages/Contact'
 import {NavLink, Route, Switch} from 'react-router-dom'; 
+import Logo from '../src/img/logo.png';
 
 /*
 Route는 url주소에 따라 어떤 component를 보여줄 지 결정해준다.
@@ -11,7 +12,10 @@ Navlink는 click이라는 action이 발생했을 때 url을 바꿔준다.
 */
 
 const App = (props) => {
-
+  
+  <section ClassName="logo">
+        <img src={Logo} />
+  </section>
   // .map 설명 할 차례 !!!!
   const routeList = [
     { path: "/", title: "Home" },
@@ -24,7 +28,7 @@ const App = (props) => {
     <div> 
       <div style={{border: '2px solid red', width: '100%', height: '80px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0 25px'}}>
         <div>
-          Logo
+          <img src="./img/logo.png" alt="logo" />
         </div>
         <div>
           {routeList.map((element, index) => {
