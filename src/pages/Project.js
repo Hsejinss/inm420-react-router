@@ -2,11 +2,21 @@ import React from 'react';
 // import './Project.css';
 import './Style.css';
 
+// import project1 from '../img/innisfree_brochure_1';
+
 
 const Project = (props) => {
   return(
     <div className="project-component">
       This is Project Component.
+      
+      {/*project1*/}
+      {/* <div className="project1-section">
+        <section className="project1-image">
+          <img src={project1} />
+        </section>
+      </div> */}
+
       {/* project content */}
       <div className="project-content">
         <div className="content1">

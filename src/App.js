@@ -1,8 +1,8 @@
 import React from "react"
 import Home from './pages/Home';
-import About from './pages/About'
+import About from './pages/About';
 import Project from './pages/Project';
-import Contact from './pages/Contact'
+import Contact from './pages/Contact';
 import {NavLink, Route, Switch} from 'react-router-dom'; 
 import Logo from '../src/img/logo.png';
 
@@ -12,17 +12,26 @@ Navlink는 click이라는 action이 발생했을 때 url을 바꿔준다.
 */
 
 const App = (props) => {
-  
+  /*This section will be shown on every page*/
+  /*logo*/
   <section ClassName="logo">
         <img src={Logo} />
   </section>
   // .map 설명 할 차례 !!!!
+  /*nav*/
   const routeList = [
     { path: "/", title: "Home" },
     { path: "/about", title: "About" },
     { path: "/project", title: "Project" },
     { path: "/contact", title: "Contact" }
   ];
+
+    /*This section will be shown on every page*/
+    /*footer*/
+    // <i class="bi bi-instagram"></i>
+    // <i class="bi bi-facebook"></i>
+    // <i class="bi bi-linkedin"></i>
+    // <h1 className="footer-info"> Info  / Support /  </h1>
 
   return(
     <div> 
@@ -75,6 +84,8 @@ const App = (props) => {
         <Route path="/contact" component={() =>{return <Contact />}}/>
       </Switch>
     </div>
+
+
   )
 }
 
@@ -94,4 +105,13 @@ export default App;
   - custom mobile first responsive web design (X)
   - consistent code style (X)  
   - organize project files (X)
+*/
+
+/* Help me!!! */
+/*
+App.js -> footer는 어디에 넣어야 하는지?
+Home.js -> 로고 불러오기 안 됨
+Project.js -> 사진 불러오기가 안 됨
+Bootstrap, Bootstrap icon 어떻게 쓰는지??
+
 */
