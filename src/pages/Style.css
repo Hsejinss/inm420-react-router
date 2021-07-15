@@ -1,6 +1,6 @@
 /**********Home**********/
 .home-component {
-    color: #ec5e62;
+    /* color: #ec5e62; */
     font-family: 'Abril Fatface', cursive;
 }
 
@@ -12,6 +12,12 @@
 }
 
 /**********Contact**********/
+
+
+
+.list1{
+    font-size: 25px;
+}
 
 /*desktop version*/
 @media (min-width: 768px) {
