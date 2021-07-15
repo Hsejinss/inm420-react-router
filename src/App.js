@@ -78,15 +78,15 @@ const App = (props) => {
       </Switch>
       {/*footer*/}
       <footer>
-        <div className="icon">
+        <div className="icon-container">
           <div>
-            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-instagram icon" aria-hidden="true"></i>
           </div>
           <div>
-            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            <i class="fa fa-facebook-official icon" aria-hidden="true"></i>
           </div>
           <div>
-            <i class="fa fa-linkedin-square" aria-hidden="true"></i>  
+            <i class="fa fa-linkedin-square icon" aria-hidden="true"></i>  
           </div>
         </div>
 

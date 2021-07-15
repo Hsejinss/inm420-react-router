@@ -1,6 +1,6 @@
 import React from 'react';
 // import './Project.css';
-import './Style.css';
+import '../css/Style.css';
 import project1 from '../img/Innisfree_brochure_1.jpg';
 import project2 from '../img/W_magazine_cover.jpg';
 
