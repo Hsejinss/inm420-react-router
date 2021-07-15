@@ -24,10 +24,15 @@ p{
   font-size: 13px;
   text-align: center;
 }
-.fa{
+.icon-container{
+  display: flex;
+  align-items: center;
+}
+/* .icon{
   align-items: center;
   justify-content: center;
-}
+  display: block !important; 
+} */
 
 /*desktop version*/
 @media (min-width: 768px) {
