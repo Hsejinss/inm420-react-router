@@ -8,10 +8,6 @@ import project2 from '../img/W_magazine_cover.jpg';
 const Project = (props) => {
   return(
     <div className="project-component">
-      This is Project Component.
-      
-     
-
       {/* project content */}
       <div className="project-content">
         <div className="content1">
@@ -25,7 +21,7 @@ const Project = (props) => {
         </section>
         <div className="project1-content">
           <h1>Innisfree Green festival Brochure</h1>
-          <p>Description :)</p>
+          <p>Description</p>
         </div>
       </div>
        {/*project2*/}

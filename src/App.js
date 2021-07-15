@@ -77,13 +77,26 @@ const App = (props) => {
         <Route path="/contact" component={() =>{return <Contact />}}/>
       </Switch>
       {/*footer*/}
-      <i class="fa fa-instagram" aria-hidden="true"></i>
-      <i class="fa fa-facebook-official" aria-hidden="true"></i>
-      <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-      <h1 className="footer-info"> Info  │ Support │ FAQs  <br/>
-      Terms of Use ㆍ Privacy Policy
-      </h1>
-      <p>ⓒ2021</p>
+      <footer>
+        <div className="icon">
+          <div>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </div>
+          <div>
+            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+          </div>
+          <div>
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>  
+          </div>
+        </div>
+
+        
+        <h1 className="footer-info"> Info  │ Support │ FAQs  <br/>
+        Terms of Use ㆍ Privacy Policy
+        </h1>
+        <p>ⓒ2021</p>
+      </footer>
+
     </div>
 
 

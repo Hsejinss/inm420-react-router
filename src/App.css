@@ -1,7 +1,35 @@
+/**********Logo & Nav**********/
 .logo img {
   height: 60px;
   width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+/**********Footer**********/
+footer {
+  background-color: #e2555c;
+  color: #eee;
+}
+.footer-info{
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+p{
+  font-weight: 500;
+  font-size: 13px;
+  text-align: center;
+}
+.fa{
+  align-items: center;
+  justify-content: center;
+}
+
+/*desktop version*/
+@media (min-width: 768px) {
+
 }

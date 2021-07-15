@@ -1,22 +1,52 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
 /**********Home**********/
 .home-component {
     /* color: #ec5e62; */
     font-family: 'Abril Fatface', cursive;
 }
 
+.list1{
+    font-size: 25px;
+    color: #e2555c;
+}
+
+
 /**********About**********/
+.aboutMe{
+    text-align: center;
+    padding: 15px 0 3px 0;
+    color: #e2555c;
+}
+.aboutMe-description{
+    padding: 0 30px;
+    font-size: 14px;
+}
+
 
 /**********Project**********/
 .project-component {
     font-size: 50px;
 }
+.project-content-text{
+    color: #e2555c;
+    padding: 20px 0;
+}
+
+
 
 /**********Contact**********/
 
-
-
-.list1{
-    font-size: 25px;
+.signin{
+    color: white;
+    background-color: #e2555c;
+    border-radius: 10px;
+    padding: 2px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*desktop version*/
