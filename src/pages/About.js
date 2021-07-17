@@ -1,10 +1,17 @@
 import React from 'react';
 import '../css/Style.css';
+import myProfile from '../img/selfie.png'
+
 
 const About = (props) => {
 
   return(
     <div className="about-component">
+      <div className="aboutProfile">
+        <section ClassName="aboutMe-image">
+            <img src={myProfile} />
+          </section>
+      </div>
       <h1 className="aboutMe">
         About Me
       </h1>

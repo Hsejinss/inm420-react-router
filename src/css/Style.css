@@ -7,10 +7,26 @@
     /* color: #ec5e62; */
     font-family: 'Abril Fatface', cursive;
 }
-
 .list1{
     font-size: 25px;
     color: #e2555c;
+}
+.hero-image{
+    position: absolute;
+    top: 0;   
+    position: relative;
+
+
+}
+.hero-text{
+    color: #e2555c;
+    font-size: 35px;
+    font-weight: 500;
+}
+.content-text{
+    margin-top: 30px;
+    color: #e2555c;
+    font-size: 25px;
 }
 
 
@@ -23,6 +39,11 @@
 .aboutMe-description{
     padding: 0 30px;
     font-size: 14px;
+}
+.aboutProfile{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
 }
 
 
@@ -43,13 +64,41 @@
     color: white;
     background-color: #e2555c;
     border-radius: 10px;
-    padding: 2px 30px;
-    display: flex;
+    padding: 10px 50px;
+    margin: 25px auto;
+
+}
+.signin:hover{
+    background-color: #e7686e;
+}
+.contact-form-text{
+    color: #e2555c;
+    font-size: 40px;
+    margin-top: 30px;
+
+}
+.contact-form-content{
     justify-content: center;
-    align-items: center;
+    align-content: center;
 }
 
 /*desktop version*/
 @media (min-width: 768px) {
 
+    /*Home*/
+
 }
+
+/*
+App.js
+    Nav
+    로고 재배치
+    네비게이션 햄버거메뉴로 만들기
+    footer
+    아이콘 중간에 재배치
+Home.js
+Project.js
+Contact.js
+About.js
+    profile img 사이즈 조절
+*/
