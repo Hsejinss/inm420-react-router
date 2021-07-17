@@ -3,14 +3,26 @@ import '../css/Style.css';
 import Hero from '../img/hero-image.jpg';
 import project1 from '../img/Innisfree_brochure_1.jpg';
 import project2 from '../img/W_magazine_cover.jpg';
+
+import Ps from '../img/PS icon.png'
+import Ai from '../img/AI icon.png'
+import Id from '../img/ID icon.png'
+import Vs from '../img/VS icon.png'
+import Ae from '../img/AE icon.png'
+import Xd from '../img/XD icon.png'
+
+
 import { Row, Col } from 'react-bootstrap';
 
 const Home = (props) => {
 
   const list = [
-    { imgSrc: Hero, contentA: 'Image 1', contentB: 'Image 1 Description', contentC: 'Image 1 Tag' },
-    { imgSrc: project1, contentA: 'Image 2', contentB: 'Image 2 Desc', contentC: 'Image 2 Tag' },
-    { imgSrc: project2, contentA: 'Image 3', contentB: 'Image 3 Desc', contentC: 'Image 3 Tag' },
+    { imgSrc: Ps, contentA: 'Adobe Photoshop', contentB: 'Image 1 Description', contentC: 'Image 1 Tag' },
+    { imgSrc: Ai, contentA: 'Adobe illustration', contentB: 'Image 2 Desc', contentC: 'Image 2 Tag' },
+    { imgSrc: Id, contentA: 'Adobe Indesign', contentB: 'Image 3 Desc', contentC: 'Image 3 Tag' },
+    { imgSrc: Vs, contentA: 'Visual Studio Code', contentB: 'Image 3 Desc', contentC: 'Image 3 Tag' },
+    { imgSrc: Ae, contentA: 'Adobe AfterEffect', contentB: 'Image 3 Desc', contentC: 'Image 3 Tag' },
+    { imgSrc: Xd, contentA: 'Adobe XD', contentB: 'Image 3 Desc', contentC: 'Image 3 Tag' },
   ];
 
   return(

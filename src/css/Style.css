@@ -15,8 +15,6 @@
     position: absolute;
     top: 0;   
     position: relative;
-
-
 }
 .hero-text{
     color: #e2555c;
@@ -24,7 +22,7 @@
     font-weight: 500;
 }
 .content-text{
-    margin-top: 30px;
+    margin: 30px auto 40px auto;
     color: #e2555c;
     font-size: 25px;
 }
@@ -35,17 +33,21 @@
     text-align: center;
     padding: 15px 0 3px 0;
     color: #e2555c;
+
 }
 .aboutMe-description{
     padding: 0 30px;
-    font-size: 14px;
+    font-size: 15px;
+    margin-bottom: 60px;
+}
+/* .aboutMe-image{
+    width: 100%;
+    height: auto;
 }
 .aboutProfile{
     width: 100%;
     height: auto;
-    overflow: hidden;
-}
-
+} */
 
 /**********Project**********/
 .project-component {
@@ -54,6 +56,26 @@
 .project-content-text{
     color: #e2555c;
     padding: 20px 0;
+}
+.project-name{
+    font-size: 25px;
+    color: #e2555c;
+    margin-top: 25px;
+}
+.project-description{
+    margin-top: 15px;
+    font-size: 15px;
+}
+.learnMore{
+    font-size: 12px;
+    background-color: white;
+    border-color: #e2555c;
+    color: #e2555c;
+    border-radius: 10px;
+    padding: 5px 35px;
+    margin-bottom: 50px;
+    
+
 }
 
 
@@ -69,7 +91,8 @@
 
 }
 .signin:hover{
-    background-color: #e7686e;
+    background-color: #dd4149;
+    transition: 0.5s;
 }
 .contact-form-text{
     color: #e2555c;
@@ -86,6 +109,11 @@
 @media (min-width: 768px) {
 
     /*Home*/
+    /*Contact*/
+    .contact-form{
+        justify-content: center;
+        align-content: center;
+    }
 
 }
 
@@ -98,6 +126,7 @@ App.js
     아이콘 중간에 재배치
 Home.js
 Project.js
+    Learn More button - border, margin
 Contact.js
 About.js
     profile img 사이즈 조절

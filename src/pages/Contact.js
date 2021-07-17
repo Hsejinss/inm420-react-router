@@ -6,7 +6,7 @@ const Contact = (props) => {
   return(
     <div>
       
-      <div className= "contact-form">
+      <div className= "contact-form container">
         <h1 className="contact-form-text">Keep In Touch</h1>
         <div className="contact-form-content container">
           <div className="col-md-2">

@@ -20,8 +20,12 @@ const Project = (props) => {
           <img src={project1} alt={"project1"}/>
         </section>
         <div className="project1-content">
-          <h1>Innisfree Green festival Brochure</h1>
-          <p>Description</p>
+          <h1 className="project-name">Innisfree Green festival Brochure</h1>
+          <p className="project-description">Practicing Green Life with Enjoyment, <br />
+          Created a brochure with Innisfree's Play Green Festival.</p>
+        </div>
+        <div className="container">
+          <button className="learnMore">Learn More</button>
         </div>
       </div>
        {/*project2*/}
@@ -30,8 +34,12 @@ const Project = (props) => {
           <img src={project2} alt={"project2"}/>
         </section>
         <div className="project1-content">
-          <h1>W magazine</h1>
-          <p>Description :)</p>
+          <h1 className="project-name">W magazine</h1>
+          <p className="project-description">Girl Power Magazine <br />
+          A day in the extraordinary life of girl</p>
+        </div>
+        <div className="container">
+          <button className="learnMore">Learn More</button>
         </div>
       </div>
 

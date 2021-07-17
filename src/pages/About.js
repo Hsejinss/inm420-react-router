@@ -12,9 +12,7 @@ const About = (props) => {
             <img src={myProfile} />
           </section>
       </div>
-      <h1 className="aboutMe">
-        About Me
-      </h1>
+      <h1 className="aboutMe">Sejin Han</h1>
       <p className="aboutMe-designer">
         Graphic Designer │ Web Designer
       </p>
