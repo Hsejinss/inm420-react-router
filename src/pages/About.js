@@ -8,9 +8,9 @@ const About = (props) => {
   return(
     <div className="about-component">
       <div className="aboutProfile">
-        <section ClassName="aboutMe-image">
-            <img src={myProfile} />
-          </section>
+        <section className="aboutMe-image">
+          <img src={myProfile} />
+        </section>
       </div>
       <h1 className="aboutMe">Sejin Han</h1>
       <p className="aboutMe-designer">

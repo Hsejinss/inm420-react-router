@@ -5,6 +5,7 @@ import Project from './pages/Project';
 import Contact from './pages/Contact';
 import {NavLink, Route, Switch} from 'react-router-dom'; 
 import Logo from '../src/img/logo.png';
+import { Container, Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import './App.css';
 
 /*
@@ -26,20 +27,69 @@ const App = (props) => {
     { path: "/contact", title: "Contact" }
   ];
 
+
+
   return(
     <div> 
-      <div style={{border: '2px solid red', width: '100%', height: '80px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0 25px'}}>
+      <div style={{width: '100%'}}>
+      <Navbar collapseOnSelect expand="lg" bg="light">
         <section className="logo">
           <img src={Logo} />
         </section>
-        <div>
-          {routeList.map((element, index) => {
-            return(
-              <NavLink key={index} style={{margin: '0 20px'}} exact to={element.path} activeStyle={{color: 'red'}} >
-                {element.title}
-              </NavLink>
-            )
-          })}
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto"></Nav>
+          <Nav>
+            {routeList.map((element, index) => {
+              return(
+                <NavLink key={index} style={{margin: '0 20px', textDecoration: 'none', color: '#333'}} exact to={element.path} activeStyle={{color: '#f47981'}} >
+                  {element.title}
+                </NavLink>
+              )
+            })}
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+
+      {/* 
+      <Navbar expand="lg" style={{border: '2px solid red', display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+        <Container >
+
+         
+        </Container>
+        <Container>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="me-auto">
+                
+              </Nav>
+            </Navbar.Collapse>
+        </Container>
+      </Navbar> */}
+
+      {/* <Navbar expand="lg" style={{border: '2px solid blue', width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+        <section className="logo">
+          <img src={Logo} />
+        </section>
+        <div style={{border: '2px solid green'}}>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <div>
+                {routeList.map((element, index) => {
+                  return(
+                    <NavLink key={index} style={{margin: '0 20px'}} exact to={element.path} activeStyle={{color: 'red'}} >
+                      {element.title}
+                    </NavLink>
+                  )
+                })}
+              </div>
+            </Nav>
+          </Navbar.Collapse>
+        </div>
+      </Navbar> */}
+
+
           {/*Route이전에 들어갈 contents: Logo, Nav*/}
           {/* <NavLink
             exact to="/"
@@ -65,28 +115,30 @@ const App = (props) => {
           >
             Contact
           </NavLink> */}
-        </div>
 
 
         {/* Add NavLink */}
       </div>
-      <Switch>
-        <Route exact path="/" component={() => { return <Home /> }} />
-        <Route path="/about" component={() => {return <About />}} />
-        <Route path="/project" component={() =>{return <Project />}}/>
-        <Route path="/contact" component={() =>{return <Contact />}}/>
-      </Switch>
+      <div style={{width: '100%'}}>
+        <Switch>
+          <Route exact path="/" component={() => { return <Home /> }} />
+          <Route path="/about" component={() => {return <About />}} />
+          <Route path="/project" component={() =>{return <Project />}}/>
+          <Route path="/contact" component={() =>{return <Contact />}}/>
+        </Switch>
+      </div>
+
       {/*footer*/}
       <footer>
         <div className="icon-container">
           <div>
-            <i class="fa fa-instagram icon" aria-hidden="true"></i>
+            <i class="fa fa-instagram icon-margin" aria-hidden="true"></i>
           </div>
           <div>
-            <i class="fa fa-facebook-official icon" aria-hidden="true"></i>
+            <i class="fa fa-facebook-official icon-margin" aria-hidden="true"></i>
           </div>
           <div>
-            <i class="fa fa-linkedin-square icon" aria-hidden="true"></i>  
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>  
           </div>
         </div>
 

@@ -12,10 +12,15 @@
 footer {
   background-color: #e2555c;
   color: #eee;
-  /* position: fixed; */
-  left: 0;
-  bottom: 0;
+  /* position: absolute; */
+  /* left: 0;
+  bottom: 0; */
   width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .footer-info{
   font-size: 15px;
@@ -29,8 +34,13 @@ p{
   text-align: center;
 }
 .icon-container{
-  display: flex;
-  align-items: center;
+  display: flex; /*한개의 row로 정렬됨*/
+  justify-content: center; /*페이지의 가로 - 가운데로 정렬해줌*/
+  /*align-items: center; 페이지의 세로 - 가운데로 정렬*/
+  margin-top: 10px;
+}
+.icon-margin{
+  margin-right: 10px;
 }
 /* .icon{
   align-items: center;

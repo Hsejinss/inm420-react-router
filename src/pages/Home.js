@@ -1,15 +1,16 @@
 import React from 'react';
 import '../css/Style.css';
 import Hero from '../img/hero-image.jpg';
-import project1 from '../img/Innisfree_brochure_1.jpg';
-import project2 from '../img/W_magazine_cover.jpg';
+import ui from '../img/ui-design.png'
+import css from '../img/css.png'
+import wireframe from '../img/wireframe.png'
 
-import Ps from '../img/PS icon.png'
-import Ai from '../img/AI icon.png'
-import Id from '../img/ID icon.png'
-import Vs from '../img/VS icon.png'
-import Ae from '../img/AE icon.png'
-import Xd from '../img/XD icon.png'
+// import Ps from '../img/PS icon.png'
+// import Ai from '../img/AI icon.png'
+// import Id from '../img/ID icon.png'
+// import Vs from '../img/VS icon.png'
+// import Ae from '../img/AE icon.png'
+// import Xd from '../img/XD icon.png'
 
 
 import { Row, Col } from 'react-bootstrap';
@@ -17,24 +18,23 @@ import { Row, Col } from 'react-bootstrap';
 const Home = (props) => {
 
   const list = [
-    { imgSrc: Ps, contentA: 'Adobe Photoshop', contentB: 'Image 1 Description', contentC: 'Image 1 Tag' },
-    { imgSrc: Ai, contentA: 'Adobe illustration', contentB: 'Image 2 Desc', contentC: 'Image 2 Tag' },
-    { imgSrc: Id, contentA: 'Adobe Indesign', contentB: 'Image 3 Desc', contentC: 'Image 3 Tag' },
-    { imgSrc: Vs, contentA: 'Visual Studio Code', contentB: 'Image 3 Desc', contentC: 'Image 3 Tag' },
-    { imgSrc: Ae, contentA: 'Adobe AfterEffect', contentB: 'Image 3 Desc', contentC: 'Image 3 Tag' },
-    { imgSrc: Xd, contentA: 'Adobe XD', contentB: 'Image 3 Desc', contentC: 'Image 3 Tag' },
+    { imgSrc: ui, contentA: 'UI/UX', contentB: 'Image 1 Description'},
+    { imgSrc: css, contentA: 'Web Development', contentB: 'Image 2 Desc'},
+    { imgSrc: wireframe, contentA: 'Wireframe', contentB: 'Image 3 Desc'},
+
   ];
 
   return(
     <div className="home-component">
       {/* hero */}
-      <div className="hero-section">
-        <section ClassName="hero-image">
-          <img src={Hero} />
+      <div className="hero-section" >
+        <section className="hero-image">
+          {/* <img src={Hero} style={{border: '2px solid blue'}}/> */}
+          <h1 className="hero-text">
+            I'm Sejin Han. Web Designer!
+          </h1>
         </section>
-        <h1 className="hero-text">
-          I'm Sejin Han. Web Designer!
-        </h1>
+
       </div>
       {/* content */}
       <div className="home-content">
@@ -50,7 +50,6 @@ const Home = (props) => {
                       <img src={element.imgSrc} style={{width: 'auto', height: '100px'}}/>
                       <div className="list1">{element.contentA}</div>
                       <div>{element.contentB}</div>
-                      <div>{element.contentC}</div>
                     </div>
                   </Col>
                 )

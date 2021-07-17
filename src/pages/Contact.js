@@ -4,7 +4,7 @@ import '../css/Style.css';
 const Contact = (props) => {
 
   return(
-    <div>
+    <div style={{width: '100%', height: 'calc(100vh - 80px - 150px)'}}>
       
       <div className= "contact-form container">
         <h1 className="contact-form-text">Keep In Touch</h1>
@@ -19,10 +19,10 @@ const Contact = (props) => {
           </div>
           <div className="col-md-4">
           <label for="fname">Message</label>
-          <input type="text" className="form-control" id="message" placeholder="Leave your Message"></input>
+          <textarea className="form-control" id="message" placeholder="Leave your Message"></textarea>
           </div>
-          <div className="container">
-            <button className="signin">Sign in</button>
+          <div className="send-container">
+            <div className="send">Send</div>
           </div>
   
         </div>

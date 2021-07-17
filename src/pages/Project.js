@@ -1,8 +1,8 @@
 import React from 'react';
 // import './Project.css';
 import '../css/Style.css';
-import project1 from '../img/Innisfree_brochure_1.jpg';
-import project2 from '../img/W_magazine_cover.jpg';
+// import project1 from '../img/Innisfree_brochure_1.jpg';
+// import project2 from '../img/W_magazine_cover.jpg';
 
 
 const Project = (props) => {
@@ -15,31 +15,31 @@ const Project = (props) => {
         </div>
       </div>
        {/*project1*/}
-       <div className="project1-section">
+       <div className="project-section">
         <section className="project1-image">
-          <img src={project1} alt={"project1"}/>
+          {/* <img src={project1} alt={"project1"}/> */}
         </section>
         <div className="project1-content">
           <h1 className="project-name">Innisfree Green festival Brochure</h1>
           <p className="project-description">Practicing Green Life with Enjoyment, <br />
           Created a brochure with Innisfree's Play Green Festival.</p>
         </div>
-        <div className="container">
+        <div className="learnMore-container">
           <button className="learnMore">Learn More</button>
         </div>
       </div>
        {/*project2*/}
-       <div className="project2-section">
+       <div className="project-section">
         <section className="project2-image">
-          <img src={project2} alt={"project2"}/>
+          {/* <img src={project2} alt={"project2"}/> */}
         </section>
         <div className="project1-content">
           <h1 className="project-name">W magazine</h1>
           <p className="project-description">Girl Power Magazine <br />
           A day in the extraordinary life of girl</p>
         </div>
-        <div className="container">
-          <button className="learnMore">Learn More</button>
+        <div className="learnMore-container">
+          <div className="learnMore">Learn More</div>
         </div>
       </div>
 

@@ -12,11 +12,25 @@
     color: #e2555c;
 }
 .hero-image{
-    position: absolute;
+    /* position: absolute;
     top: 0;   
+    position: relative; */
+    width: 100%;
+    height: 70vh;
+    border: 2px solid blue;
+    background-image: url('../img/hero-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     position: relative;
+    z-index: 1;
 }
 .hero-text{
+    position: absolute;
+    z-index: 2;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: #e2555c;
     font-size: 35px;
     font-weight: 500;
@@ -39,6 +53,13 @@
     padding: 0 30px;
     font-size: 15px;
     margin-bottom: 60px;
+}
+.aboutProfile{
+    width: 100%;
+}
+.aboutProfile img{
+    width: 80%;
+    height: auto;
 }
 /* .aboutMe-image{
     width: 100%;
@@ -66,31 +87,64 @@
     margin-top: 15px;
     font-size: 15px;
 }
+.learnMore-container {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
 .learnMore{
+    border: 2px solid #e2555c;
     font-size: 12px;
     background-color: white;
-    border-color: #e2555c;
+    /* border-color: #e2555c; */
     color: #e2555c;
     border-radius: 10px;
     padding: 5px 35px;
-    margin-bottom: 50px;
     
-
+}
+.project-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.project1-image{
+    border: 2px solid blue;
+    width: 100%;
+    height: 30vh;
+    background-image: url('../img/Innisfree_brochure_1.jpg');
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    background-size: contain;
+    background-position: center;
+}
+.project2-image{
+    border: 2px solid blue;
+    width: 100%;
+    height: 30vh;
+    background-image: url('../img/W_magazine_cover.jpg');
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    background-size: contain;
+    background-position: center;
 }
 
 
-
 /**********Contact**********/
-
-.signin{
+.send-container{
+    display: flex;
+    justify-content: center;
+}
+.send{
     color: white;
     background-color: #e2555c;
     border-radius: 10px;
     padding: 10px 50px;
-    margin: 25px auto;
-
+    margin: 25px 0 0 0;
 }
-.signin:hover{
+.send:hover{
     background-color: #dd4149;
     transition: 0.5s;
 }
@@ -98,23 +152,38 @@
     color: #e2555c;
     font-size: 40px;
     margin-top: 30px;
-
+    padding: 20px 0;
 }
 .contact-form-content{
-    justify-content: center;
-    align-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*desktop version*/
 @media (min-width: 768px) {
 
     /*Home*/
+
+    /*About*/
+    .aboutProfile img{
+        width: 30%;
+        height: auto;
+    }
+
     /*Contact*/
     .contact-form{
         justify-content: center;
         align-content: center;
     }
 
+    /*Project*/
+    .project1-image, .project2-image{
+        border: 2px solid red;
+        width: 80%;
+        height: 65vh;
+        background-size: cover;
+    }
 }
 
 /*
