@@ -4,7 +4,6 @@
 }
 /**********Home**********/
 .home-component {
-    /* color: #ec5e62; */
     font-family: 'Abril Fatface', cursive;
 }
 .list1{
@@ -12,12 +11,8 @@
     color: #e2555c;
 }
 .hero-image{
-    /* position: absolute;
-    top: 0;   
-    position: relative; */
     width: 100%;
     height: 70vh;
-    border: 2px solid blue;
     background-image: url('../img/hero-image.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -32,15 +27,21 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: #e2555c;
-    font-size: 35px;
-    font-weight: 500;
+    font-size: 38px;
+    font-weight: 600;
+    padding-top: 120px;
 }
 .content-text{
     margin: 30px auto 40px auto;
     color: #e2555c;
     font-size: 25px;
+    font-weight: 600;
 }
 
+.HomeImage{
+    width: auto;
+    height: 100px;
+}
 
 /**********About**********/
 .aboutMe{
@@ -61,14 +62,6 @@
     width: 80%;
     height: auto;
 }
-/* .aboutMe-image{
-    width: 100%;
-    height: auto;
-}
-.aboutProfile{
-    width: 100%;
-    height: auto;
-} */
 
 /**********Project**********/
 .project-component {
@@ -97,11 +90,13 @@
     border: 2px solid #e2555c;
     font-size: 12px;
     background-color: white;
-    /* border-color: #e2555c; */
     color: #e2555c;
     border-radius: 10px;
     padding: 5px 35px;
-    
+    text-decoration: none;    
+}
+.learnMore:hover{
+    color: #e2555c;
 }
 .project-section {
     width: 100%;
@@ -110,27 +105,57 @@
     justify-content: center;
     align-items: center;
 }
-.project1-image{
-    border: 2px solid blue;
+.project-image{
     width: 100%;
     height: 30vh;
-    background-image: url('../img/Innisfree_brochure_1.jpg');
     background-repeat: no-repeat;
-    /* background-size: contain; */
-    background-size: contain;
-    background-position: center;
+}
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .project2-image{
-    border: 2px solid blue;
     width: 100%;
     height: 30vh;
     background-image: url('../img/W_magazine_cover.jpg');
     background-repeat: no-repeat;
-    /* background-size: contain; */
     background-size: contain;
     background-position: center;
 }
 
+/**********Project Detail**********/
+.projectDetail{
+    padding: 0 10%;
+    margin: '100px 0';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectDetailImage{
+    width: 100%;
+    height: 30vh;
+    margin-bottom: 10px;
+}
+.detailTitle{
+    font-size: 1.6rem;
+    color: #f47987;
+    margin-top: 50px;
+}
+
+.detailDesc1{
+    font-size: 1.2rem;
+    color: #333;
+    margin: 30px 0;
+}
+
+.detailDesc2{
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 100px;
+}
 
 /**********Contact**********/
 .send-container{
@@ -160,11 +185,23 @@
     align-items: center;
 }
 
+.ContactContent{
+    width: 100%;
+    height: calc(100vh - 80px - 150px);
+}
+
+
 /*desktop version*/
 @media (min-width: 768px) {
 
     /*Home*/
-
+    .hero-text{
+        font-size: 65px;
+        margin-top: 45px;
+    }
+    .list2{
+        margin-bottom: 200px;
+    }
     /*About*/
     .aboutProfile img{
         width: 30%;
@@ -178,25 +215,15 @@
     }
 
     /*Project*/
-    .project1-image, .project2-image{
-        border: 2px solid red;
+    .project-image, .project2-image{
         width: 80%;
         height: 65vh;
         background-size: cover;
     }
-}
 
-/*
-App.js
-    Nav
-    로고 재배치
-    네비게이션 햄버거메뉴로 만들기
-    footer
-    아이콘 중간에 재배치
-Home.js
-Project.js
-    Learn More button - border, margin
-Contact.js
-About.js
-    profile img 사이즈 조절
-*/
+    /*Project Detail*/
+    .projectDetailImage{
+        width: 100%;
+        height: 400px;
+    }
+}

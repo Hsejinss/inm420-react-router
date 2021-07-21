@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/Style.css';
-import myProfile from '../img/selfie.png'
+import myProfile from '../img/profile.png'
 
 
 const About = (props) => {
@@ -9,7 +9,7 @@ const About = (props) => {
     <div className="about-component">
       <div className="aboutProfile">
         <section className="aboutMe-image">
-          <img src={myProfile} />
+          <img src={myProfile} alt={'My Profile'} />
         </section>
       </div>
       <h1 className="aboutMe">Sejin Han</h1>
