@@ -3,6 +3,7 @@ import '../css/Style.css';
 import { useRouteMatch, NavLink, Switch, Route } from 'react-router-dom';
 import ProjectDetail from './ProjectDetail';
 import { projectData } from './projectData';
+import { gsap } from 'gsap';
 
 const Project = (props) => {
 

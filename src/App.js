@@ -3,7 +3,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Project from './pages/Project';
 import Contact from './pages/Contact';
-import {NavLink, Route, Switch} from 'react-router-dom'; 
+import {NavLink, Route} from 'react-router-dom'; 
 import Logo from '../src/img/logo.png';
 import {Navbar, Nav } from 'react-bootstrap';
 import './App.css';
@@ -42,20 +42,19 @@ const App = (props) => {
       {/* Add NavLink */}
       </div>
       <div style={{width: '100%'}}>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/project">
-            <Project />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-        </Switch>
+        <Route exact path="/">
+          {/* match -> Indicate where the user is */}
+          {({ match }) => <Home animation={match !== null} />}
+        </Route>
+        <Route path="/about">
+          {({ match }) => <About animation={match !== null} />}
+        </Route>
+        <Route path="/project">
+          <Project />
+        </Route>
+        <Route path="/contact">
+          {({ match }) => <Contact animation={match !== null} />}
+        </Route>
       </div>
 
       {/*footer*/}
