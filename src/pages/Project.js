@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import '../css/Style.css';
 import { useRouteMatch, NavLink, Switch, Route } from 'react-router-dom';
 import ProjectDetail from './ProjectDetail';
@@ -6,6 +6,15 @@ import { projectData } from './projectData';
 import { gsap } from 'gsap';
 
 const Project = (props) => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    //profileEffect
+    gsap.fromTo(".project-content-0", { duration:1, x: -150}, {duration:1, x: 0});
+    gsap.fromTo(".project-content-1", { duration:1, x: -150}, {duration:1, x: 0});
+
+  },[])
+
 
   const { path } = useRouteMatch();
   return(
@@ -20,7 +29,7 @@ const Project = (props) => {
           </div>
           {projectData.map((element, index) => {
             return(
-              <div key={index} className="project-section">
+              <div className={`project-content-${index}`}key={index}>
                 <section className="project-image">
                   <img src={element.imageList[0]} alt={element.title}/>
                 </section>

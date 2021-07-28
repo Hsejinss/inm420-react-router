@@ -10,10 +10,39 @@
   margin-left: 10%;
 }
 
-.Navstyle{
+.navstyle{
   margin: 0 20px;
   text-decoration: none;
   color: #333;
+}
+.navstyle:hover{
+  color: #333;
+}
+
+.eachPageContainer{
+  /* position: relative; */
+  overflow-y: hidden;
+}
+.page {
+  position: absolute;
+}
+.page-enter {
+  opacity: 0;
+  transform: translateX(-10%);
+}
+.page-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.page-exit {
+  opacity: 0;
+  transform: translateX(0);
+}
+.page-exit-active {
+  opacity: 0;
+  transform: translateX(10%);
+  transition: opacity 300ms, transform 300ms;
 }
 
 /**********Footer**********/
@@ -46,6 +75,7 @@ p{
 .icon-margin{
   margin-right: 10px;
 }
+
 
 /*desktop version*/
 @media (min-width: 768px) {

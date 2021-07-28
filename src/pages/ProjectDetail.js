@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, NavLink } from 'react-router-dom';
 import { projectData } from './projectData';
 import { Row, Col } from 'react-bootstrap';
+import { gsap } from 'gsap';
 
 import '../css/Style.css';
 
@@ -32,9 +33,14 @@ const ProjectDetail = (props) => {
         {projectData[params.id].smallDesc}
       </div>
       <div className="detailDesc2">
-      
-        {projectData[params.id].bigDesc}
+        <div className="detailDesc2-content">
+          {projectData[params.id].bigDesc}
+        </div>
+        <NavLink className="learnMore" exact to="/project">
+          Back
+        </NavLink>
       </div>
+
     </div>
   )
 };

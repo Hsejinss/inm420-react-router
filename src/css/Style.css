@@ -30,6 +30,7 @@
     font-size: 38px;
     font-weight: 600;
     padding-top: 120px;
+    overflow-y: hidden;
 }
 .content-text{
     margin: 30px auto 40px auto;
@@ -45,7 +46,9 @@
 .home-content{
     margin:20px 0 100px 0;
 }
-
+.hero-content-1{
+    margin: 35px 0;
+}
 /**********About**********/
 .aboutMe{
     text-align: center;
@@ -101,7 +104,7 @@
 .learnMore:hover{
     color: #e2555c;
 }
-.project-section {
+.project-content-0, .project-content-1{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -157,13 +160,21 @@
 .detailDesc2{
     font-size: 0.9rem;
     color: #666;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.detailDesc2-content{
+    margin-bottom: 50px;
 }
 
 /**********Contact**********/
 .send-container{
     display: flex;
     justify-content: center;
+    width: 100%;
+    overflow-y: hidden;
 }
 .send{
     color: white;
@@ -203,6 +214,9 @@
         margin-top: 30px;
         overflow: hidden;
     }
+    .hero-content-1{
+        margin: 0;
+    }
     /*About*/
     .aboutProfile img{
         width: 30%;
@@ -227,4 +241,5 @@
         width: 100%;
         height: 400px;
     }
+
 }
